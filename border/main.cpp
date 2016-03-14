@@ -167,6 +167,22 @@ void draw_dens(float* dens, Image<byte> image) {
 	display(image);
 }
 
+void draw_v(float* u, float* v, Image<Color> image) {
+	float u_min, u_max, v_min, v_max;
+	maxmin(u_min, u_max, u);
+	maxmin(v_min, v_max, v);
+	cout << v_min << "  " << v_max << endl;
+	cout << u_min << "  " << u_max << endl;
+	for (int absc = 0; absc < image.height(); absc++) {
+		for (int ord = 0; ord < image.width(); ord++){
+			int intens_u = int(MIN(255, 255 * ((u[(1 + ord)*(N + 2) + (1 + absc)] - u_max) / (u_min - u_max))));
+			int intens_v = int(MIN(255, 255 * ((v[(1 + ord)*(N + 2) + (1 + absc)] - v_max) / (v_min - v_max))));
+			image(absc, ord) = Color(intens_u, intens_v, 120);
+		}
+	}
+	display(image);
+}
+
 void init_u_v(float *u, float *v)
 {
 	for (int absc = 4*N / 10; absc < 5 * N / 10; absc++) {
@@ -184,6 +200,7 @@ int main()
 		dens[i] = rand() % 1000;
 	}
 	Image<byte> image = Image<byte>(N, N);
+	Image<Color> imagev = Image<Color>(N, N);
 	openWindow(image.width(), image.height(),"Fluide");
 	init_u_v(u_prev, v_prev);
 	bool simulating = true;
@@ -198,7 +215,8 @@ int main()
 		vel_step(u, v, u_prev, v_prev);
 		dens_step(dens, dens_prev, u, v);
 		if (i % 5 == 0){
-			draw_dens(dens,image);
+			//draw_dens(dens,image);
+			draw_v(u, v, imagev);
 		}
 		cout << i << endl;
 	}
