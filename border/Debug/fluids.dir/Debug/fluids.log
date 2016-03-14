@@ -1,0 +1,23 @@
+﻿La génération a démarré 22/02/2016 12:26:56.
+     1>Projet "C:\Users\User\Documents\Ponts 2015-2016\MOPSI\Projet\border\Debug\fluids.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Imagine++\include" /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include\QtCore /I"C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\mkspecs\win32-msvc2013" /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include\QtWidgets /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include\QtOpenGL /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "SRCDIR=C:/Users/User/Documents/Ponts 2015-2016/MOPSI/Projet/border" /D QT_CORE_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"fluids.dir\Debug\\" /Fd"fluids.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\main.cpp
+         main.cpp
+     1>..\main.cpp(8): warning C4305: 'initialisation' : troncation de 'double' à 'const float'
+     1>..\main.cpp(10): warning C4305: 'initialisation' : troncation de 'double' à 'const float'
+     1>..\main.cpp(11): warning C4305: 'initialisation' : troncation de 'double' à 'const float'
+     1>..\main.cpp(35): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>..\main.cpp(36): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>..\main.cpp(37): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>..\main.cpp(38): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>..\main.cpp(96): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>..\main.cpp(112): warning C4244: '-=' : conversion de 'double' en 'float', perte possible de données
+     1>..\main.cpp(113): warning C4244: '-=' : conversion de 'double' en 'float', perte possible de données
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\Ponts 2015-2016\MOPSI\Projet\border\Debug\Debug\fluids.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:/Program Files (x86)/Imagine++/lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ImagineGraphicsd.lib C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib\Qt5Cored.lib C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib\Qt5Widgetsd.lib C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib\Qt5Guid.lib C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib\Qt5OpenGLd.lib glu32.lib opengl32.lib C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib\Qt5Widgetsd.lib C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib\Qt5Guid.lib C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib\Qt5Cored.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/User/Documents/Ponts 2015-2016/MOPSI/Projet/border/Debug/Debug/fluids.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/User/Documents/Ponts 2015-2016/MOPSI/Projet/border/Debug/Debug/fluids.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug fluids.dir\Debug\main.obj
+         fluids.vcxproj -> C:\Users\User\Documents\Ponts 2015-2016\MOPSI\Projet\border\Debug\Debug\fluids.exe
+     1>Génération du projet "C:\Users\User\Documents\Ponts 2015-2016\MOPSI\Projet\border\Debug\fluids.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:01.56

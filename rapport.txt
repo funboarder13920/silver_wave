@@ -1,0 +1,4 @@
+comparer avec un vrai solveur
+étudier convergence stabilité
+vérifier force spy,spx,FR,...
+tout remettre en cData*
